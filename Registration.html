@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            background-image: url(bit5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+        .register-form{
+            background-color: rgb(215, 230, 243);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 19px black;
+            width: 300px;
+            text-align: left;
+            margin-left: 500px;
+        }
+        .register-form h2{
+            text-align: center;
+            margin-bottom: 2px;
+        }
+        .register-form label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        }
+        .register-form input[type="text"],
+        .register-form input[type="date"]{
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+            border: 1px solid bisque;
+            border-radius: 5px;
+        }
+        .register-form input[type="button"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #1ae5f3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .register-form input[type="button"]:hover{
+            background-color:rgb(3, 111, 145);
+        }
+         .nav-bar{
+      background-color: rgb(255, 255, 255);
+      overflow: hidden;
+      display: flex;
+      justify-content: right;
+      padding: 7px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      float: right;
+    }
+    .nav-bar a{
+      padding: 12px 20px;
+      text-decoration:none;
+      font-size: 16px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 6px;
+      margin: 0 6px;
+    }
+    .nav-bar a:hover{
+      background-color: rgb(96, 189, 243);
+      color: white;
+      transition: background-color 0.2s;
+      transform: translatey(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+    <a href="home.html">Home</a>
+    <a href="LOGIN1.html">Login Page</a>
+    <a href="Registration.html">Register Page</a>
+    <a href="contact.html">Contact</a>
+    <a href="more info.html">More Info</a>
+  </div>
+    <form>
+        <div class="register-form">
+        <h2>Registration Form</h2>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your First name"><br>
+        <label for="uname">Username:</label><br>
+        <input type="text" id="uname" name="uname" placeholder="Enter username"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" placeholder="Password"><br>
+        <label for="DOB">Date of Birth:</label><br>
+        <input type="date"><br>
+        <label for="addr">Address:-</label><br>
+        <input type="text" id="addr" name="addr" placeholder="Enter the address"><br><br>
+        <input type="button" value="Register"><br>
+        <a href="LOGIN1.html" style="text-decoration: none;">Login here</a>
+    </form>
+</div>
+</body>
+</html>
